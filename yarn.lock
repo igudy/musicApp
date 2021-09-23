@@ -1474,6 +1474,11 @@
   dependencies:
     "@types/yargs-parser" "*"
 
+"@vee-validate/rules@^4.4.7":
+  version "4.4.7"
+  resolved "https://registry.yarnpkg.com/@vee-validate/rules/-/rules-4.4.7.tgz#785ac537943d8fc18588343be52f1b5bd5acd62f"
+  integrity sha512-2gBXOBWdGFVp//OzG7LcfLz1qzQxKIOmGsUE/G0TaF0z6n3P7EWQT+LZs+/jHRFrF4Bug6O4bvQz7pAQq5Yehw==
+
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@vue/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-1.2.1.tgz#31624a7a505fb14da1d58023725a4c5f270e6a81"
@@ -11074,10 +11079,10 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-vee-validate@^3.4.13:
-  version "3.4.13"
-  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-3.4.13.tgz#886ffe90778edde9c2f0c3ad94bfab3fe8079f31"
-  integrity sha512-ONnyRixpd0/JOGLuN8dlxFwLoT5FGq5ti1w4rx/zFZWaJZ1EefhfAbXkQvLwLhjU6izkfHyITXojW/7InOU3Tw==
+vee-validate@^4.4.11:
+  version "4.4.11"
+  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-4.4.11.tgz#497437588a2cde5548c2b479805ccdd2534cf4b6"
+  integrity sha512-wZR3YbL6tzOhr/JwBskGdBxTEqwcVWQNuyD5rpZSw+uNKqkTlLI11hUcAyjOo4wk+CJOjKvab+1SAfY4xClmsA==
 
 vendors@^1.0.0:
   version "1.0.4"
