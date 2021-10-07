@@ -1,7 +1,11 @@
-import * as firebase from "firebase/app";
-import 'firebase/auth'
-import 'firebase/firestore';
+// import * as firebase from 'firebase/app';
+// import 'firebase/firestore';
+// require('firebase/auth');
+// import 'firebase/auth';
 
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -9,18 +13,19 @@ const firebaseConfig = {
   authDomain: "musicplayer-8caa0.firebaseapp.com",
   projectId: "musicplayer-8caa0",
   storageBucket: "musicplayer-8caa0.appspot.com",
-  appId: "1:419865975945:web:241f30c990b091f1b87a58",
+  appId: "1:419865975945:web:241f30c990b091f1b87a58"
 };
-  // Initialize Firebase
-  // const app = firebase.initializeApp(firebaseConfig);
+
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-const auth = firebase.auth();
+const auth = firebase.auth()
 const db = firebase.firestore();
+const usersCollection = db.collection('users');
 
-const usersCollection = db.collection('users')
-export{
+export {
   auth,
   db,
   usersCollection,
 };
+
