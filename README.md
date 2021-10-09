@@ -1,4 +1,4 @@
-# musicplayer
+# music
 
 ## Project setup
 ```
