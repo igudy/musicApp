@@ -1,14 +1,14 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/firestore';
+import 'firebase/storage';
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyDOMNbbI4wuwQAWsi7xunjbwHVIp6xiQkM',
-  authDomain: 'musicplayer-8caa0.firebaseapp.com',
-  projectId: 'musicplayer-8caa0',
-  storageBucket: 'musicplayer-8caa0.appspot.com',
-  appId: '1:419865975945:web:241f30c990b091f1b87a58',
+  apiKey: 'AIzaSyAaSyK7W0_UWeDMTKiwTVcjTGZgX2qRkP8',
+  authDomain: 'music-c2596.firebaseapp.com',
+  projectId: 'music-c2596',
+  storageBucket: 'music-c2596.appspot.com',
+  appId: '1:417422649545:web:7439d0a2f274a0585ac518',
 };
 
 // Initialize Firebase
@@ -16,10 +16,21 @@ firebase.initializeApp(firebaseConfig);
 
 const auth = firebase.auth();
 const db = firebase.firestore();
+const storage = firebase.storage();
+
+db.enablePersistence().catch((error) => {
+  console.log(`Firebase persistence error ${error.code}`);
+});
+
 const usersCollection = db.collection('users');
+const songsCollection = db.collection('songs');
+const commentsCollection = db.collection('comments');
 
 export {
   auth,
   db,
   usersCollection,
+  songsCollection,
+  commentsCollection,
+  storage,
 };
