@@ -9,12 +9,13 @@ import './assets/tailwind.css';
 import './assets/main.css';
 import i18n from './includes/i18n';
 import './registerServiceWorker';
+// import i18n from './i18n'
 
 let app;
 
 auth.onAuthStateChanged(() => {
   if (!app) {
-    app = createApp(App).use(i18n);
+    app = createApp(App).use(i18n).use(i18n);
 
     app.use(store);
     app.use(router);
